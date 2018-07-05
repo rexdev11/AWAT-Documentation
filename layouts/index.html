@@ -1,0 +1,61 @@
+{{ define "awat-doc-title" }} {{ .Site.Title}} {{end}}
+{{ define "awat-doc-header" }} {{ partial "header" . }} {{end}}
+{{ define "awat-doc-main" }}
+
+<div id="main">
+    <div id="hero">
+        <h1>{{.Title}}</h1>
+        <p>{{.Description}}</p>
+    </div>
+    <div id="action-buttons">
+        <a class="button primary big" href="https://github.com/jeblister/kube/releases" onclick="_gaq.push(['_trackEvent', 'kube', 'download']);">Download</a> <a class="button outline big" href="https://github.com/jeblister/kube" onclick="_gaq.push(['_trackEvent', 'kube', 'github']);">View on Github</a>
+        <p>Zip-archive, includes all the source and site example files</p>
+    </div>
+    <div class="message focus" data-component="message"> <span class="close small"></span>
+        <a class="button inverted small " href="https://imperavi.com/kube/" >Kube </a> from <a href="https://imperavi.com/">imperavi</a> is an awesome <mark>CSS & JS Framework</mark> and i designed this template for <a href="https://gohugo.io">hugo</a> with the same original philosophy !
+    </div>
+    <div id="kube-features">
+        <div class="row gutters">
+            <div class="col col-4 item">
+                <figure style="{max-height: 48px}">
+                    {{ partial "icon.html" "shield" }}
+                </figure>
+                <h3>OfGeist</h3>
+                <p>An <b> Omni-Sentiment Political Prediction Toolset </b> for traversing political and economic state in the United States of America. This framework holds the capacity to be built by asynchronous teams continually to always improve output accuracies. “<i>OfGeist</i>”. This module will provide the exploration, discovery and building patterns used to standardize contribution and create the ability to asynchronously contribute. Discovering the scaffolding of this project will enable others to contribute to other parts the future project modules.</p>
+            </div>
+            <div class="col col-4 item">
+                <figure>
+                    <img alt="Tax Projections" height="48" src="{{ readFile ( "/static/coin-dollar.svg" | relURL ) }}" width="48">
+                </figure>
+                <h3>Tax Projecting</h3>
+                <p>A tax projection is a point of reference calculative values based off the metrics and events over a timeline for both entities and tax procedures. This tool provides state for past present and future values for the entity. </p>
+                <h3>AI Updater</h3>
+                <p>The tax process is maintained and kept current through document discovery. This module will keep a watch on tax rules and updated the system with new or changed process as they are released to the public.</p>
+            </div>
+            <div class="col col-4 item">
+                <figure>
+                    <img alt="Transparency" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
+                </figure>
+                <h3>Transparency</h3>
+                <p>We strongly believe in critical analysis of our systems and process. We will always make it a priority to provide easy ways for anyone to gain </p>
+            </div>
+        </div>
+        <div class="row gutters">
+            <div class="col col-4 item">
+                <h4>Mobile-first UI</h4>
+                <p>Every element in A-Wat is mobile-first and fully embraces latest and greatest tech.</p>
+            </div>
+            <div class="col col-4 item">
+                <h4>Cross-browser</h4>
+                <p><strong>A-Wat</strong> works in all modern browsers, both desktop and mobile, including latest Chrome, Firefox, Safari, Opera, IE and Edge.</p>
+            </div>
+            <div class="col col-4 item">
+                <h4>License</h4>
+                <p>Abraham Watson is licensed under <a href="https://opensource.org/licenses/MIT">MIT</a>.<br>
+                    The <strong>OfGeist Framework</strong> is absolutely free for personal, public or commercial use.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
+{{ define "awat-doc-footer"}} {{ partial "footer" .}} {{end}}

@@ -1,3 +1,27 @@
 baseURL = "https://travesty.org/"
 languageCode = "en-us"
 title = "Abraham Watson, A Cognitive Servant of tbe People"
+theme = "kube"
+description = "A-Wat is an inclusive term for a multi part system that will provide insights for any who would like to re discover their world. Anyone could inherit an understanding ussually reserved to those who devoute their lives to a field. Abraham Watson would organize and precieve each persons interactions with it's ever growing knowledge base and understanding of it, our world."
+Paginate = 4
+[Params]
+    RSSLink = "/index.xml"
+    contributors = ["iamrexdev@gmail.com"] # add your company name
+    github = "https://github.com/rexdev11/AWAT-Documentation" # add your github profile name
+    email = "unleashme93@gmail.com"
+    [[menu.main]]
+        name = "Docs"
+        weight = -100
+        url = "/docs/"
+        [[services]]
+            name = "Services"
+            weight = -1000
+            url = "/services/"
+    [[menu.main]]
+        name = "Blog"
+        weight = -100
+        url = "/blog/"
+    [[menu.main]]
+        name = "Faq"
+        weight = -100
+        url = "/faq/"
