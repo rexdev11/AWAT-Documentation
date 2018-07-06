@@ -1,0 +1,14 @@
+{{ $pages := .Site.Pages }}
+{{ range $index, $page := $pages }}
+    <a class="awat-tile" href="{{ $page.URL }}" >
+        <label aria-hidden="true">
+            {{- $page.Title -}}
+        </label>
+        <div class="awat-tile-header">
+            {{- $page.Title -}}
+        </div>
+        <div class="awat-description">
+            {{- $page.Params.Description -}}
+        </div>
+    </a>
+{{ end }}
